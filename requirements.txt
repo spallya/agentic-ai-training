@@ -1,0 +1,12 @@
+langchain
+langgraph~=0.6.4
+langchain-openai~=0.3.29
+mem0ai
+typing_extensions
+python-dotenv~=1.1.1
+typing_extensions~=4.14.1
+langchain-core~=0.3.74
+autogen
+mcp
+bs4
+langchain-mcp-adapters
