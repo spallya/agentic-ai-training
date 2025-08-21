@@ -99,12 +99,18 @@ python mcp_client.py
 
 ## 📸 Visuals / Demo
 
-### Artcile Writer Graph
-![Article writer graph](graphs/article_writer_langgraph.png)
-
-### Graph with Tools and conditional edge 
-![Graph with using mcp](graphs/langgraph_with_multiple_mcp.png)
-
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <b>Article Writer Graph</b><br>
+      <img src="graphs/article_writer_langgraph.png" alt="Article writer graph" width="250" height="450">
+    </td>
+    <td align="center" valign="top">
+      <b>Graph with Tools and Conditional Edge</b><br>
+      <img src="graphs/langgraph_with_multiple_mcp.png" alt="Graph with MCP" width="250" height="300">
+    </td>
+  </tr>
+</table>
 ---
 
 ## 📚 Learn More
