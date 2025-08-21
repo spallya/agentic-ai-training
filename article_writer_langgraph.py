@@ -54,7 +54,7 @@ builder.add_edge("writer", END)
 
 # Compile graph
 graph = builder.compile()
-
+print(graph.get_graph().print_ascii())
 # Run
 initial_state = ArticleState(topic="Impact of AI in Education")
 result = graph.invoke(initial_state)

@@ -10,3 +10,4 @@ autogen
 mcp
 bs4
 langchain-mcp-adapters
+grandalf
