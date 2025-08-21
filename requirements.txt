@@ -11,3 +11,6 @@ mcp
 bs4
 langchain-mcp-adapters
 grandalf
+graphviz
+pygraphviz
+ipython

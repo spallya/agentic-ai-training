@@ -102,7 +102,8 @@ python mcp_client.py
 *Add screenshots or GIFs here to showcase agent workflows in action.*
 
 ```markdown
-![Agent Workflow](docs/agent_workflow.gif)
+![Article writer graph](graphs/article_writer_langgraph.png)
+![Graph with using mcp](graphs/langgraph_with_multiple_mcp.png)
 ```
 
 ---

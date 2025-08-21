@@ -54,6 +54,7 @@ builder.add_edge("writer", END)
 
 # Compile graph
 graph = builder.compile()
+graph.get_graph().draw_png("graphs/article_writer_langgraph.png")
 print(graph.get_graph().print_ascii())
 # Run
 initial_state = ArticleState(topic="Impact of AI in Education")

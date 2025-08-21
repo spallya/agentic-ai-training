@@ -62,6 +62,7 @@ async def create_graph(session):
     graph_builder.add_conditional_edges("chat_node", tools_condition, {"tools": "tool_node", "__end__": END})
     graph_builder.add_edge("tool_node", "chat_node")
     graph = graph_builder.compile(checkpointer=MemorySaver())
+    graph.get_graph().draw_png("graphs/langgraph_with_mcp.png")
     print(graph.get_graph().print_ascii())
     return graph
 
