@@ -102,8 +102,8 @@ python mcp_client.py
 *Add screenshots or GIFs here to showcase agent workflows in action.*
 
 ```markdown
-![Article writer graph](graphs/article_writer_langgraph.png)
-![Graph with using mcp](graphs/langgraph_with_multiple_mcp.png)
+![Article writer graph](https://github.com/spallya/agentic-ai-training/blob/main/graphs/article_writer_langgraph.png)
+![Graph with using mcp](https://github.com/spallya/agentic-ai-training/blob/main/graphs/langgraph_with_multiple_mcp.png)
 ```
 
 ---
