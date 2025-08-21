@@ -110,7 +110,7 @@ python mcp_client.py
 ## 📚 Learn More
 
 - [Langchain Documentation](https://langchain.com/docs/)
-- [MCP Framework Overview](https://github.com/spallya/mcp)
+- [MCP Framework Overview](https://modelcontextprotocol.io/docs/getting-started/intro)
 
 ---
 
