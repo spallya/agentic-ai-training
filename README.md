@@ -142,7 +142,9 @@ python mcp_client.py
 
 ## Learn More
 
+- [OpenAI API Documentation](https://platform.openai.com/docs/api-reference/introduction)  
 - [Langchain Documentation](https://langchain.com)  
+- [Why Langchain?](https://python.langchain.com/docs/concepts/why_langchain/)  
 - [MCP Framework Overview](https://modelcontextprotocol.io)  
 
 ---
