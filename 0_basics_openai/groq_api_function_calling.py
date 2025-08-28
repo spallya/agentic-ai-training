@@ -4,12 +4,11 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-if not os.getenv("OPENAI_API_KEY"):
-    raise ValueError("OPENAI_API_KEY not found in .env file")
+if not os.getenv("GROQ_API_KEY"):
+    raise ValueError("GROQ_API_KEY not found in .env file")
 
-api_key = os.getenv("OPENAI_API_KEY")
-
-url = "https://api.openai.com/v1/chat/completions"
+api_key = os.getenv("GROQ_API_KEY")
+url = "https://api.groq.com/openai/v1/chat/completions"
 
 headers = {
     "Content-Type": "application/json",
@@ -32,7 +31,7 @@ functions = [
 ]
 
 data = {
-    "model": "gpt-4o-mini",
+    "model": "llama-3.3-70b-versatile",  # Updated to supported model
     "messages": [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What’s the weather in Hyderabad in celsius?"}
@@ -40,12 +39,17 @@ data = {
     "tools": [{"type": "function", "function": f} for f in functions]
 }
 
-response = requests.post(url, headers=headers, json=data).json()
+response = requests.post(url, headers=headers, json=data)
+response_json = response.json()
 
-print("Function calling (direct API):")
-print(json.dumps(response, indent=2))
+print("Function calling (Groq API):")
+print(json.dumps(response_json, indent=2))
 
-# Check if tool call was suggested
-tool_calls = response["choices"][0]["message"].get("tool_calls")
-if tool_calls:
-    print("Suggested function call:", tool_calls[0])
+# Only attempt to access 'choices' if response succeeded
+if "choices" in response_json:
+    tool_calls = response_json["choices"][0]["message"].get("tool_calls")
+    if tool_calls:
+        print("\nSuggested function call:")
+        print(json.dumps(tool_calls, indent=2))
+else:
+    print("\nNo valid response received. Please check the error above.")
