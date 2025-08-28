@@ -1,97 +1,124 @@
 # Agentic AI Training
 
-![Python](https://img.shields.io/badge/python-3.11-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![GitHub issues](https://img.shields.io/github/issues/spallya/agentic-ai-training)
-
-Welcome to the **Agentic AI Training** repository—a collection of hands-on exercises and sample code designed to explore agent-based systems and artificial intelligence.
+A practical, hands-on repository of Python code and utilities crafted for exploring agent-based systems in artificial intelligence, with frameworks like **LangChain** and **MCP (Multi-Context Processing)**.
 
 ---
 
-## 📑 Table of Contents
-- [Overview](#overview)
-- [Key Components](#key-components)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage Examples](#usage-examples)
-- [Learn More](#learn-more)
-- [Contributing](#contributing)
+## Table of Contents
+
+- [Overview](#overview)  
+- [Key Components](#key-components)  
+- [Features](#features)  
+- [Getting Started](#getting-started)  
+- [Developer Setup](#developer-setup)  
+- [Usage Examples](#usage-examples)  
+- [Visuals / Demo](#visuals--demo)  
+- [Learn More](#learn-more)  
+- [Contributing](#contributing)  
 - [License](#license)
 
 ---
 
-## 🚀 Overview
+## Overview
 
-This repository provides a practical companion to Agentic AI training sessions. It includes Python scripts and tools that demonstrate how to build and interact with intelligent agents using frameworks like **Langchain** and **MCP (Multi-Context Processing)**.  
-
-Whether you're a beginner or experienced developer, these resources will help you understand foundational concepts and real-world applications of agentic AI.
+This repository mirrors the content of the live **Agentic AI training** sessions—offering developers, from beginners to advanced, a sandbox to build, test, and learn through intelligent agent workflows.
 
 ---
 
-## 🧩 Key Components
+## Key Components
 
 - **Article Writer Modules**  
-  Scripts like `article_writer_autogen.py` and `article_writer_langchain_tools.py` show how to generate and process textual content using AI agents.
+  - `article_writer_autogen.py`: Auto-generation pipelines.  
+  - `article_writer_langchain_tools.py`: Integrating Langchain for content creation.
 
 - **MCP Servers**  
-  Files such as `bmi_mcp_server.py` and `math_mcp_server.py` demonstrate setting up Multi-Context Processing servers for advanced data handling.
+  - `bmi_mcp_server.py`, `math_mcp_server.py`: Demonstrations of setting up Multi-Context Processing servers for structured data handling.
 
 - **Langgraph Integration**  
-  Scripts like `langgraph_with_multiple_mcp.py` and `mcp_with_langgraph.py` illustrate how to combine Langchain and MCP servers to create sophisticated agent workflows.
+  - `langgraph_with_multiple_mcp.py`, `mcp_with_langgraph.py`: Examples of combining Langchain with MCP servers for more advanced agent orchestration.
 
 - **Client Interaction**  
-  The `mcp_client.py` script demonstrates how to communicate with MCP servers for real-time data exchange and processing.
+  - `mcp_client.py`: Sample client for real-time interaction with MCP servers.
 
 ---
 
-## 🌟 Features
+## Features
 
-- Build intelligent AI agents with Python.
-- Integrate Langchain with Multi-Context Processing (MCP) servers.
-- Hands-on examples for article generation and workflow orchestration.
-- Ready-to-run scripts for learning and experimentation.
-- Modular design for easy extension and customization.
-
----
-
-## 🧪 Getting Started
-
-To start exploring the Agentic AI training materials:
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/spallya/agentic-ai-training.git
-   cd agentic-ai-training
-   ```
-
-2. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Explore the individual scripts to understand their functionality and integration.
+- Build and experiment with intelligent AI agents in Python.
+- Leverage Langchain together with robust MCP server architectures.
+- Hands-on scripts for content generation and orchestrated workflows.
+- Modular and extensible design tailored for experimentation.
 
 ---
 
-## 🖥️ Usage Examples
+## Getting Started
 
-Run the Article Writer agent:
+To run locally:
 
 ```bash
+git clone https://github.com/spallya/agentic-ai-training.git
+cd agentic-ai-training
+pip install -r requirements.txt
+```
+
+Explore the script files to understand how to build and extend agentic AI systems.
+
+---
+
+## Developer Setup
+
+### IDEs
+- Recommended: **VS Code** or **PyCharm**
+- Both IDEs provide excellent support for Python virtual environments and `.env` configuration.
+
+### Create Virtual Environment
+```bash
+# Create venv
+python -m venv .venv
+
+# Activate venv (Linux / Mac)
+source .venv/bin/activate
+
+# Activate venv (Windows PowerShell)
+.venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### API Keys Setup
+
+1. **OpenAI API Key**
+   - Sign up / log in at [OpenAI](https://platform.openai.com/).  
+   - Generate an API key from the [API Keys dashboard](https://platform.openai.com/account/api-keys).
+
+2. **Groq API Key**
+   - Sign up / log in at [Groq](https://console.groq.com/).  
+   - Generate an API key from the dashboard.
+
+### Configure `.env` File
+
+Create a `.env` file in the project root with the following content:
+
+```ini
+OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+> The code automatically loads these values when running scripts.
+
+---
+
+## Usage Examples
+
+```bash
+# Generate an article using the auto-gen agent
 python article_writer_autogen.py
-```
 
-Start the MCP Server:
-
-```bash
+# Launch an MCP server (e.g., math context processing)
 python math_mcp_server.py
-```
 
-Connect using the MCP Client:
-
-```bash
+# Connect to an MCP server with the client
 python mcp_client.py
 ```
 
@@ -113,19 +140,19 @@ python mcp_client.py
 </table>
 ---
 
-## 📚 Learn More
+## Learn More
 
-- [Langchain Documentation](https://langchain.com/docs/)
-- [MCP Framework Overview](https://modelcontextprotocol.io/docs/getting-started/intro)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have suggestions for improvements, bug fixes, or new features, please fork this repository and submit a pull request.
+- [Langchain Documentation](https://langchain.com)  
+- [MCP Framework Overview](https://modelcontextprotocol.io)  
 
 ---
 
-## 📄 License
+## Contributing
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are highly valued! If you'd like to suggest enhancements, fix bugs, or propose new features, please fork the repo and submit a pull request.
+
+---
+
+## License
+
+Licensed under the **MIT License**—see the [LICENSE](LICENSE) file for full details.
