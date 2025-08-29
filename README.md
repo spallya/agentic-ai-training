@@ -1,6 +1,8 @@
 # Agentic AI Training
+*Hands-on playground to build, test, and evolve agent-based AI systems.*  
 
-**Agentic AI Training** is a hands-on Python sandbox for experimenting with **agent-based AI workflows**.  
+**Agentic AI Training** is a hands-on Python sandbox for experimenting with **agent-based AI workflows**.
+
 From building autonomous content generators to orchestrating workflows with **LangChain**, **LangGraph**, and **MCP**, this repo helps you **prototype, learn, and evolve real-world AI agent systems**.
 
 ### 🔑 Highlights
