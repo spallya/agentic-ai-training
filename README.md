@@ -23,7 +23,11 @@ A practical, hands-on repository of Python code and utilities crafted for explor
 ## Overview
 
 This repository mirrors the content of the live **Agentic AI training** sessions—offering developers, from beginners to advanced, a sandbox to build, test, and learn through intelligent agent workflows.
-
+### 🔑 Highlights
+- 🛠 **Real-world scaffolding** – end-to-end examples like article writer agents, MCP servers, and graph-based orchestration.  
+- 🔗 **Framework integration** – play with LangChain, Autogen, Crewai, LangGraph, and the emerging MCP protocol.  
+- ⚡ **Modular & practical** – simple structure, easy to adapt and extend.  
+- 🎯 **Learn by doing** – tweak the code, run the agents, and explore agentic AI in action.  
 ---
 
 ## Key Components
