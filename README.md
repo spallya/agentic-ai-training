@@ -1,6 +1,13 @@
 # Agentic AI Training
 
-A practical, hands-on repository of Python code and utilities crafted for exploring agent-based systems in artificial intelligence, with frameworks like **LangChain** and **MCP (Multi-Context Processing)**.
+**Agentic AI Training** is a hands-on Python sandbox for experimenting with **agent-based AI workflows**.  
+From building autonomous content generators to orchestrating workflows with **LangChain**, **LangGraph**, and **MCP**, this repo helps you **prototype, learn, and evolve real-world AI agent systems**.
+
+### 🔑 Highlights
+- 🛠 **Real-world scaffolding** – end-to-end examples like article writer agents, MCP servers, and graph-based orchestration.  
+- 🔗 **Framework integration** – play with LangChain, Autogen, Crewai, LangGraph, and the emerging MCP protocol.  
+- ⚡ **Modular & practical** – simple structure, easy to adapt and extend.  
+- 🎯 **Learn by doing** – tweak the code, run the agents, and explore agentic AI in action.  
 
 ---
 
@@ -23,11 +30,7 @@ A practical, hands-on repository of Python code and utilities crafted for explor
 ## Overview
 
 This repository mirrors the content of the live **Agentic AI training** sessions—offering developers, from beginners to advanced, a sandbox to build, test, and learn through intelligent agent workflows.
-### 🔑 Highlights
-- 🛠 **Real-world scaffolding** – end-to-end examples like article writer agents, MCP servers, and graph-based orchestration.  
-- 🔗 **Framework integration** – play with LangChain, Autogen, Crewai, LangGraph, and the emerging MCP protocol.  
-- ⚡ **Modular & practical** – simple structure, easy to adapt and extend.  
-- 🎯 **Learn by doing** – tweak the code, run the agents, and explore agentic AI in action.  
+
 ---
 
 ## Key Components
