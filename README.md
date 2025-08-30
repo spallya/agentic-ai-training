@@ -1,6 +1,15 @@
 # Agentic AI Training
+*Hands-on playground to build, test, and evolve agent-based AI systems.*  
 
-A practical, hands-on repository of Python code and utilities crafted for exploring agent-based systems in artificial intelligence, with frameworks like **LangChain** and **MCP (Multi-Context Processing)**.
+**Agentic AI Training** is a hands-on Python sandbox for experimenting with **agent-based AI workflows**.
+
+From building autonomous content generators to orchestrating workflows with **LangChain**, **LangGraph**, and **MCP**, this repo helps you **prototype, learn, and evolve real-world AI agent systems**.
+
+### 🔑 Highlights
+- 🛠 **Real-world scaffolding** – end-to-end examples like article writer agents, MCP servers, and graph-based orchestration.  
+- 🔗 **Framework integration** – play with LangChain, Autogen, Crewai, LangGraph, and the emerging MCP protocol.  
+- ⚡ **Modular & practical** – simple structure, easy to adapt and extend.  
+- 🎯 **Learn by doing** – tweak the code, run the agents, and explore agentic AI in action.  
 
 ---
 
@@ -13,7 +22,8 @@ A practical, hands-on repository of Python code and utilities crafted for explor
 - [Developer Setup](#developer-setup)  
 - [Usage Examples](#usage-examples)  
 - [Visuals / Demo](#visuals--demo)  
-- [Learn More](#learn-more)  
+- [Learn More](#learn-more)
+- [Assignment Submission Guidelines](#assignment-submission-guidelines)  
 - [Contributing](#contributing)  
 - [License](#license)
 
@@ -148,7 +158,70 @@ python mcp_client.py
 - [MCP Framework Overview](https://modelcontextprotocol.io)  
 
 ---
+# Assignment Submission Guidelines
 
+To submit your assignments, please follow the steps below:
+
+## Folder Structure
+
+Your assignment should be placed under the `assignments/` folder in the following structure:
+
+```
+assignments/
+└── <assignment-topic>/
+    └── solutions
+        └── <your-name>.py
+```
+
+### Example
+```
+assignments/
+└── langchain/
+    └── solutions
+        └── spallya-omar.py
+```
+
+---
+
+## Submission Process
+
+1. **Fork the Repository**
+   - Click on the **Fork** button on the top right of this repository.
+
+2. **Clone Your Fork**
+   ```bash
+   git clone https://github.com/<your-username>/agentic-ai-training.git
+   cd agentic-ai-training
+   ```
+
+3. **Create a Branch**
+   ```bash
+   git checkout -b langchain-submission
+   ```
+
+4. **Add Your Assignment**
+   - Place your solution file under the correct folder:  
+     `assignments/langchain/solutions/<your-name>.py`
+
+5. **Commit and Push**
+   ```bash
+   git add assignments/langchain/solutions/<your-name>.py
+   git commit -m "Adding langchain assignment solution by <your-name>"
+   git push origin assignment1-submission
+   ```
+
+6. **Create a Pull Request**
+   - Go to your forked repository on GitHub.
+   - Click on **Compare & Pull Request**.
+   - Provide a meaningful title and description, then submit the PR.
+
+### Notes
+- Make sure your filename matches the required format (`<your-name>.py`).
+- Ensure your code runs without errors before submission.
+- Only one submission file per participant.
+
+
+---
 ## Contributing
 
 Contributions are highly valued! If you'd like to suggest enhancements, fix bugs, or propose new features, please fork the repo and submit a pull request.
@@ -158,3 +231,4 @@ Contributions are highly valued! If you'd like to suggest enhancements, fix bugs
 ## License
 
 Licensed under the **MIT License**—see the [LICENSE](LICENSE) file for full details.
+
