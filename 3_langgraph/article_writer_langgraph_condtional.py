@@ -58,6 +58,7 @@ def should_write(state: ArticleState):
     else:
         return "research"
 
+#Conditional Edge
 builder.add_conditional_edges("outline", should_write, {"write":"writer", "research":"research"})
 
 builder.add_edge("writer", END)
