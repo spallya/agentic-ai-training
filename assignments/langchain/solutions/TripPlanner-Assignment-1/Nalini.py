@@ -10,7 +10,7 @@ import os
 load_dotenv()
 
 if not os.getenv("GROQ_API_KEY"):
-    raise ValueError("OPENAI_API_KEY not found for calling llm")
+    raise ValueError("GROQ_API_KEY not found for calling llm")
 
 # LLM setup
 #llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
@@ -61,3 +61,4 @@ if __name__ == "__main__":
 
     print("\n--- Summary ---\n", result["summary"])
     print("\n--- Itinerary ---\n", result["itinerary"])
+
