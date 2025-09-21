@@ -42,7 +42,8 @@ This repository mirrors the content of the live **Agentic AI training** sessions
   - `article_writer_langchain_tools.py`: Integrating Langchain for content creation.
 - **Lang chain core concepts with programs**
   - For LangChain Theoretical concepts, go through PresentationLangChain ppt in docs folder and explore the following practical programs.
-  - `article_writer_langchain_tools.py`: Integrating Langchain for content creation.
+  - `article_writer_langchain_tools.py`: 
+    Integrating Langchain for content creation.
   - `react_design_pattern_agent_tool_selector` :  
     Demonstrates how the **ReAct Pattern/Agent** dynamically selects tools based on a user query and returns a complete answer covers concepts oftools, ReAct Pattern and llm wrapper.
   - `react_design_pattern_agent_with_buffer_memory` :  
