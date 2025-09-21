@@ -40,6 +40,39 @@ This repository mirrors the content of the live **Agentic AI training** sessions
 - **Article Writer Modules**  
   - `article_writer_autogen.py`: Auto-generation pipelines.  
   - `article_writer_langchain_tools.py`: Integrating Langchain for content creation.
+- **Lang chain core concepts with programs**
+  - For LangChain Theoretical concepts, go through PresentationLangChain ppt in docs folder and explore practical programs.
+  - `react_design_pattern_agent_tool_selector` :  
+    Demonstrates how the **ReAct Pattern/Agent** dynamically selects tools based on a user query and returns a complete answer covers concepts oftools, ReAct Pattern and llm wrapper.
+  - `react_design_pattern_agent_with_buffer_memory` :  
+    Shows how conversation memory is used (e.g., in chatbots, short-term memory).  
+    Example usage:  
+    - Question 1: *Select flights in Delhi*  
+    - Question 2: *Does it have good hotels?*  
+    (Notice that you don’t need to repeat “Delhi”; memory handles the context.)  
+  - `rag_pinecone_pdf_demo` :  
+  This RAG example uses **Pinecone** as the vector database (retriever) and **GPT-4** as the generator.  
+  Set up all required keys in the `.env` file:  
+  `(OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_INDEX, PINECONE_CLOUD, PINECONE_REGION, FORCE_RECREATE_INDEX)`.  
+  Follow pinecone connection setup document in docs folder.
+  Run the program and ask questions about the document you ingested.
+  - `react_with_knowledgebase` :  
+    Illustrates how LLM responses can be stored in a **local vector DB/knowledge base** to avoid calling the LLM every time.  
+    Example:  
+    - Question 1: *Who is Elon Musk?* → Answer from LLM (and stored).  
+    - Question 2: *Tell me about Elon Musk again* → Answer retrieved from the knowledge base (not the LLM).  
+
+  - `vector_search_with_images` :  
+    Example of how a vector database stores and retrieves **image embeddings**.  
+    Place some images in the `images` folder, then query: *red running shoes*.  
+    The program will return the matching image(s).  
+
+  - `rag_confluence_example` :  
+    In this RAG example, the retriever is **Confluence**, and the generator is an LLM.  
+    Configure your Confluence environment variables:  
+    `(BASE_URL, EMAIL, API_TOKEN)`.
+    Follow confluence setup document in docs folder
+    Run the program and ask questions directly from your Confluence pages—the agent/LLM will answer using that content.
 
 - **MCP Servers**  
   - `bmi_mcp_server.py`, `math_mcp_server.py`: Demonstrations of setting up Multi-Context Processing servers for structured data handling.

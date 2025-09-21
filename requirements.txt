@@ -20,3 +20,17 @@ openai~=1.100.2
 typing_extensions~=4.14.1
 crewai
 groq
+chromadb>=0.5,<0.6
+typing_extensions~=4.14.1
+typing_extensions~=4.14.1
+typing_extensions~=4.14.1
+typing_extensions~=4.14.1
+pathlib~=1.0.1
+pinecone~=7.3.0
+pymupdf
+sentence-transformers~=5.1.0
+typing_extensions~=4.15.0
+numpy~=1.26.4
+beautifulsoup4~=4.13.5
+pillow~=11.3.0
+atlassian-python-api~=4.0.7
