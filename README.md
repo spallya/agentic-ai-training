@@ -75,6 +75,7 @@ This repository mirrors the content of the live **Agentic AI training** sessions
     `(BASE_URL, EMAIL, API_TOKEN)`.
     Follow confluence setup document in docs folder
     Run the program and ask questions directly from your Confluence pages—the agent/LLM will answer using that content.
+  - Note—set up all keys and values in .env file wherever you see os.getenv()
 
 - **MCP Servers**  
   - `bmi_mcp_server.py`, `math_mcp_server.py`: Demonstrations of setting up Multi-Context Processing servers for structured data handling.
